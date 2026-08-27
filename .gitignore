@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+
+# ctags 인덱스 - 저장소마다 다시 생성
+tags
+
+# 접속 정보. 토큰이 들어가므로 절대 커밋 금지
+*.env
+.llm-env
+env.sh
+
+# 코어덤프 / 빌드 산출물
+core
+core.*
+build/
