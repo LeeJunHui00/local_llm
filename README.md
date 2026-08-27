@@ -14,7 +14,7 @@
 |---|---|
 | **스펙 점검** | tool calling / 컨텍스트 / system prompt / streaming 지원 여부를 실측 |
 | **MCP 서버 3종** | 코어덤프 분석(gdb), 코드 검색·git 이력, 빌드 에러 구조화 |
-| **활용 가이드** | C/C++ 실전 패턴 8종, 약한 모델을 전제로 한 사용법 |
+| **활용 가이드** | C/C++ 실전 패턴 8종, MCP 개념 설명, 약한 모델을 전제로 한 사용법 |
 | **템플릿** | 접속 환경변수(프록시·사설 CA 포함), 저장소 규칙 파일 |
 | **배치 자동화** | diff 기반 코드리뷰 (API 직접 호출) |
 
@@ -37,7 +37,7 @@ bash mcp/verify_gdb.sh
 ```
 
 **tool calling 이 미지원이면** MCP 와 에이전트는 의미가 없음. 그 경우
-[`GUIDE.md`](GUIDE.md) 4장의 프롬프트 패턴과 `batch/` 배치 자동화만 사용할 것.
+[`GUIDE.md`](GUIDE.md) 6장의 프롬프트 패턴과 `batch/` 배치 자동화만 사용할 것.
 
 ## 설계 원칙
 
@@ -49,6 +49,7 @@ bash mcp/verify_gdb.sh
 ## 문서
 
 - [`GUIDE.md`](GUIDE.md) — 활용 가이드 본문. 먼저 읽을 것
+  - 1장 사내 모델이어야만 하는 작업 / 5장 MCP 개념 / 6장 C/C++ 실전 패턴
 - [`mcp/README.md`](mcp/README.md) — MCP 등록·검증·문제 해결
 - [`setup/PROJECT_RULES.md`](setup/PROJECT_RULES.md) — 저장소 규칙 파일 템플릿
 
